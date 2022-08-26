@@ -1,0 +1,268 @@
+/* *{
+    font-size:25px;
+} */
+/* *{
+    box-sizing: border-box;
+} */
+.graph_container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.whole_page_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-size: 50px;
+}
+input,button{
+    font-size:40px;
+}
+.form_container{
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction:column; */
+    justify-content:space-evenly;
+    /* align-items: center; */
+    padding:40px;
+    width:60vw;
+    height:60vh;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius:15px;
+    /* box-shadow:-5px 0px 10px 10px rgba(0, 0, 0, 0.136); */
+    border:2px solid black;
+}
+.individual_input_field{
+    flex-basis:33%;
+    /* text-align:center; */
+}
+input{
+    width:300px;
+    /* margin-bottom:30px; */
+}
+
+.button{
+    flex-basis:100%;
+    text-align:center;
+}
+.button button{
+    padding:10px;
+    font-size:50px;
+}
+/*----------------------*/
+.hide{
+    visibility:hidden;
+}
+.show{
+    visibility: visible;
+}
+/*----------------navbar--------------*/
+.navbar_container{
+    display:flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 50px;
+}
+.login_link_container{
+    /* text-align: right; */
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.login_and_navbar_container{
+    width:80vw;
+}
+.login_or_logout_button{
+    cursor:pointer;
+}
+.login_or_logout_button:hover{
+    opacity:50%;
+}
+.navbar{
+    display:flex;
+    /* width:80vw; */
+    margin:10px 0 50px 0;
+    justify-content: space-evenly;
+}
+.navbar div{
+    /* flex-basis:14.28%; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+/*---------Login page----------*/
+.login_container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+}
+.login{
+    background-color: rgba(37, 11, 11, 0.338);
+    padding:200px 200px 200px 200px;
+    border-radius:25px;
+    text-align: center;
+}
+.username{
+    margin-bottom:50px;
+}
+.password{
+    margin-bottom:100px;
+}
+.login_button button{
+    font-size:40px;
+    padding:10px 20px 10px 20px;
+}
+/*--------Home--------*/
+.home_whole_page_container{
+    display:flex;
+    width:100vw;
+    /* height:100vh; */
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+
+}
+.search_bar{
+    display:flex;
+    margin-top:300px;
+}
+.search_bar input{
+    width:800px;
+    border-radius:20px 0px 0px 20px;
+}
+.search_button{
+    cursor: pointer;
+    font-size:50px;
+    background-color: rgb(255, 0, 85);
+    padding:0 50px 0 50px;
+    border-radius:0 20px 20px 0 ;
+}
+.search_button:hover{
+    background-color:black;
+    color:white;
+}
+/*-----the Air quality table in the home page------------*/
+.air_quality_table{
+    margin-top:200px;
+    display:flex;
+    flex-direction:column;
+    width:60vw;
+    border:2px solid black;
+}
+.first_row{
+    /* font-size:35px; */
+    padding-left:30px;
+    border-bottom:2px solid black;
+}
+.first_row p{
+    font-size:50px;
+}
+.first_row h1{
+    font-size:90px;
+}
+.second_row{
+    background-color: rgba(255, 0, 60, 0.918);
+    padding:50px 0 0 50px;
+    border-bottom:2px solid black;
+}
+.second_row p{
+    display:inline;
+    font-size:50px;
+    background-color:rgba(0, 0, 0, 0.386);
+    padding:20px;
+    color:white;
+    border-radius:10px;
+}
+.second_row h1{
+    font-size:70px;
+}
+.third_row{
+    padding:20px 0 0 50px;
+    display:flex;
+    flex-direction:column;
+}
+.third_row h1{
+    font-size:60px;
+}
+.third_row p{
+    font-size:50px;
+}
+.aqi_data_flexbox{
+    width:85%;
+    /* border:2px solid black; */
+    align-self: center;
+    display:flex;
+    /* flex-basis:33.33%;
+    flex-wrap: wrap; */
+    flex-wrap:wrap;
+}
+.aqi_data_flexbox div{
+    /* flex-basis:400px; */
+    /* flex-wrap:wrap; */
+    /* display:inline-block; */
+    flex-basis:33%;
+    text-align:center;
+    border:1px solid black;
+    /* flex-wrap:wrap; */
+    /* min-width:33.33%; */
+}
+.grey{
+    background-color:rgba(128, 128, 128, 0.3);
+}
+/*--------------Comment and report page--------------*/
+.comment_and_report_whole_page_container{
+    width:100vw;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    margin-top:90px;
+    /* align-items:center; */
+}
+.comment{
+    background-color:grey;
+    width:30vw;
+    margin-bottom:20px;
+    border-radius: 20px;
+    /* padding:1px; */
+}
+.comments_container{
+    margin-top:50px;
+}
+.comment p:nth-child(2){
+    font-size:50px;
+    padding:15px 60px 30px 40px;
+    margin: 0;
+}
+.comment p:nth-child(1){
+    font-size:40px;
+    padding:30px 0 0 40px;
+    font-style: italic;
+    margin: 0;
+}
+.comments_container textarea{
+    margin-top:30px;
+    width:50vw;
+    height:200px;
+    font-size:50px;
+}
+.container_of_comments_container{
+    width:70vw;
+}
+.container_of_comments_container h1{
+    font-size:80px;
+    margin:0px;
+}
+.comment_post_button button{
+    margin-top:20px;
+    font-size:50px;
+    padding:10px 20px 10px 20px;
+    border-radius:20px;
+}
+.comment_post_button{
+    margin-bottom:70px;
+}
